@@ -44,7 +44,6 @@ public class TestBurgerParams {
     burger.setBuns(bun);
     burger.addIngredient(ingredient);
     Mockito.when(ingredient.getPrice()).thenReturn(ingredientPrice);
-    System.out.println(burger.getPrice());
     Assert.assertEquals(expectedPrice, burger.getPrice(), 0);
   }
 }
